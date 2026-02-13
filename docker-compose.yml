@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: sms-postgres
+    environment:
+      POSTGRES_DB: student_management
+      POSTGRES_USER: sms_user
+      POSTGRES_PASSWORD: sms_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
