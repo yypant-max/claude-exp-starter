@@ -1,8 +1,4 @@
-target/
-*.class
-*.jar
-*.war
-*.log
-.idea/
-*.iml
-.mvn/wrapper/maven-wrapper.jar
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
